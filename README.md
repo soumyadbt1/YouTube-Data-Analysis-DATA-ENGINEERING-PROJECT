@@ -56,7 +56,9 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 
  ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/cleansed%20table%20is%20formed.JPG)
 
-4) Write DAG code :
+4) ETL Script to perform transformation (Schema Change) on one of the fields and also to create partition Key on "Region" field:
+![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/de-on-youtube-cleansed-csv-to-parquet_1_ETL_script.JPG)
+
 
  ![DAG Code](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/reddit_dag_snap.JPG)
 
