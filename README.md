@@ -27,6 +27,35 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 ![Snapshot of Dataset](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/DataSet.JPG)
 2. https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/CA_Video_CSV.JPG
 ![Snapshots_CA_Video_CSV](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/CA_Video_CSV.JPG)
+![Snapshot of both](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/dataset_both.JPG)
 
+#### STEPS FOLLOWED : 
+
+1) Create an S3 bucket :   
+ ![S3 creation](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/S3%20Created.JPG)
+
+2) Move files to S3 Bucket :
+ ![S3_upload](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/moving%20files%20to%20S3.JPG)
+
+2) EC2 Instance Creation
+   
+ ![EC2 instance Creation](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/EC2%20Instance.png)
+
+3) Install PRAW, Pandas & Airflow on EC2 instance :
+   
+ ![Airflow Instance](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/Airflow%20Install%202.JPG)
+
+4) Write DAG code :
+
+ ![DAG Code](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/reddit_dag_snap.JPG)
+
+5) Running DAG on Airflow UI :
+
+ ![Airflow UI](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/created%20dags.JPG)
+ ![Airflow DAG Success](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/reddit_etl_dag%20on%20airflow.JPG)
+
+6) CSV file move to S3 bucket :
+
+![S3 Bucket](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/csv%20on%20S3.JPG)
 
 
