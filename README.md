@@ -1,4 +1,4 @@
-# YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT
+![image](https://github.com/user-attachments/assets/e1a26303-6d42-462a-a2dc-6cfbe3289796)# YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT
 
 ## Overview
 This project aims to securely manage, streamline, and perform analysis on the structured and semi-structured YouTube videos data based on the video categories and the trending metrics.
@@ -56,19 +56,23 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 
  ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/cleansed%20table%20is%20formed.JPG)
 
-4) ETL Script to perform transformation (Schema Change) on one of the fields and also to create partition Key on "Region" field:
+8) Manual ETL Script to perform transformation (Schema Change) on one of the fields and also to create partition Key on "Region" field:
 ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/de-on-youtube-cleansed-csv-to-parquet_1_ETL_script.JPG)
 
+Then, Created Automated ETL Script via S3 Trigger so that whenever a storage event happens on S3, the trigger should run the ETL job and finally store the Join data to another final S3 location as you can see.
+![f](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/added%20Trigger%20to%20Lambda%20Function.JPG)
+![g](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/added%20Trigger%20to%20Lambda%20Function%202.JPG)
+![i](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/ETL%20Job%20to%20Join%20and%20Save%20the%20data%20to%20S3.JPG)
 
- ![DAG Code](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/reddit_dag_snap.JPG)
+9) Final S3 location and files after the ETL job run :
+![image](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/final%20s3%20reporting%20data.JPG)
+![image](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Final_reporting_parquet_files.JPG)
 
-5) Running DAG on Airflow UI :
-
- ![Airflow UI](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/created%20dags.JPG)
- ![Airflow DAG Success](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/reddit_etl_dag%20on%20airflow.JPG)
-
-6) CSV file move to S3 bucket :
-
-![S3 Bucket](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/csv%20on%20S3.JPG)
-
+10) Finally used Amazon Quicksite to use the final data as source for some analytics and reporting:
+  i) Quicksite Setup : 
+    ![image](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/quicksite%20setup.JPG)
+  ii) Data Source set up :
+    ![d](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/quicksite%20datasource.JPG)
+ iii) Final Dashboard :
+    ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Quicksite%20Dashboard.JPG)
 
