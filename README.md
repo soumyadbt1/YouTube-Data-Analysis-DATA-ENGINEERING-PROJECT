@@ -22,6 +22,9 @@ Employing AWS Lambda to automate data ingestion and transformation tasks, ensuri
 5. #### Visualization and Reporting:
 Creating interactive dashboards with Amazon QuickSight to visualize trends and metrics, enabling stakeholders to make data-driven decisions.
 
+#### Architecture of Project : 
+![Image](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/architecture.jpeg)
+
 #### Dataset Used : 
 1. https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Data/CA_category_id.json
 ![Snapshot of Dataset](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/DataSet.JPG)
@@ -45,13 +48,15 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 
 5) i) Tested Lamda Function code which created parquet file on another S3 location after procesing of data:
    ![a](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/lamda%20function%20environment%20variables.JPG)
+   
   ii) Deployed Lambda Function
    ![b](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/deployed%20lamda%20function.JPG)
    ![c](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Lamda%20Function%20Test%20Suceeded.JPG)
 
-6) Lamda Function Code :
+7) Lambda Function Code :
+https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Code/lambda_function.py
  
-7) Now we can use AWS Athena to Query the processed / cleaned data with cleaned data stats on Glue as well :
+9) Now we can use AWS Athena to Query the processed / cleaned data with cleaned data stats on Glue as well :
  ![d](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/athena%20query.JPG)
 
  ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/cleansed%20table%20is%20formed.JPG)
@@ -59,17 +64,21 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 8) Manual ETL Script to perform transformation (Schema Change) on one of the fields and also to create partition Key on "Region" field:
 ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/de-on-youtube-cleansed-csv-to-parquet_1_ETL_script.JPG)
 
-Then, Created Automated ETL Script via S3 Trigger so that whenever a storage event happens on S3, the trigger should run the ETL job and finally store the Join data to another final S3 location as you can see.
+9) ETL Code used : 
+https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Code/pyspark_code.py
+
+10) Then, Created Automated ETL Script via S3 Trigger so that whenever a storage event happens on S3, the trigger should run the ETL job and finally store the Join data to another final S3 location as you can see.
 ![f](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/added%20Trigger%20to%20Lambda%20Function.JPG)
 ![g](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/added%20Trigger%20to%20Lambda%20Function%202.JPG)
 ![i](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/ETL%20Job%20to%20Join%20and%20Save%20the%20data%20to%20S3.JPG)
 
-9) Final S3 location and files after the ETL job run :
+11) Final S3 location and files after the ETL job run :
 ![image](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/final%20s3%20reporting%20data.JPG)
 ![image](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Final_reporting_parquet_files.JPG)
 
-10) Finally used Amazon Quicksite to use the final data as source for some analytics and reporting:
-  i) Quicksite Setup : 
+12) Finally used Amazon Quicksite to use the final data as source for some analytics and reporting:
+  
+   i) Quicksite Setup : 
     ![image](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/quicksite%20setup.JPG)
   ii) Data Source set up :
     ![d](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/quicksite%20datasource.JPG)
