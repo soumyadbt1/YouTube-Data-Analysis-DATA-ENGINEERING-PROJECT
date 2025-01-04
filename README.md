@@ -40,12 +40,21 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 3) Created Crawler Job & Ran it to gather stats:
  ![EC2 instance Creation](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/crawler%20running.JPG)
 
-4) Tables created by crawler job on Glue:
+4) Table created by crawler job on AWS Glue Service:
 ![Glue Database](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/tables%20added%20by%20crawler%20on%20catalog%20databse.JPG)
 
-5) Install PRAW, Pandas & Airflow on EC2 instance :
-   
- ![Airflow Instance](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/Airflow%20Install%202.JPG)
+5) i) Tested Lamda Function code which created parquet file on another S3 location after procesing of data:
+   ![a](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/lamda%20function%20environment%20variables.JPG)
+  ii) Deployed Lambda Function
+   ![b](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/deployed%20lamda%20function.JPG)
+   ![c](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Lamda%20Function%20Test%20Suceeded.JPG)
+
+6) Lamda Function Code :
+ 
+7) Now we can use AWS Athena to Query the processed / cleaned data with cleaned data stats on Glue as well :
+ ![d](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/athena%20query.JPG)
+
+ ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/cleansed%20table%20is%20formed.JPG)
 
 4) Write DAG code :
 
