@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e1a26303-6d42-462a-a2dc-6cfbe3289796)# YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT
+# YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT
 
 ## Overview
 This project aims to securely manage, streamline, and perform analysis on the structured and semi-structured YouTube videos data based on the video categories and the trending metrics.
