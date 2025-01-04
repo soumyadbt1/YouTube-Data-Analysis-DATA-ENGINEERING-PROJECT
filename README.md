@@ -40,7 +40,10 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 3) Created Crawler Job & Ran it to gather stats:
  ![EC2 instance Creation](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/crawler%20running.JPG)
 
-3) Install PRAW, Pandas & Airflow on EC2 instance :
+4) Tables created by crawler job on Glue:
+![Glue Database](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/tables%20added%20by%20crawler%20on%20catalog%20databse.JPG)
+
+5) Install PRAW, Pandas & Airflow on EC2 instance :
    
  ![Airflow Instance](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/Airflow%20Install%202.JPG)
 
