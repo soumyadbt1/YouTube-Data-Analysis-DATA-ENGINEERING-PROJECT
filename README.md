@@ -37,9 +37,8 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 2) Move files to S3 Bucket :
  ![S3_upload](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/moving%20files%20to%20S3.JPG)
 
-2) EC2 Instance Creation
-   
- ![EC2 instance Creation](https://github.com/soumyadbt1/reddit_dag_airflow_pipeline/blob/main/Snapshots/EC2%20Instance.png)
+3) Created Crawler Job & Ran it to gather stats:
+ ![EC2 instance Creation](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/crawler%20running.JPG)
 
 3) Install PRAW, Pandas & Airflow on EC2 instance :
    
