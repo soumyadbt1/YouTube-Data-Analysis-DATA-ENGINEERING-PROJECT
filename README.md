@@ -98,12 +98,11 @@ Code : https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJ
     
 ![join](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/join.JPG)
 
-
 17) Manual ETL Script to perform transformation (Schema Change) on one of the fields and also to create partition Key on "Region" field:
     
 ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/de-on-youtube-cleansed-csv-to-parquet_1_ETL_script.JPG)
 
-10) ETL Code used : 
+18) ETL Code used : 
 https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Code/pyspark_code.py
 
 11) Then, Created Automated ETL Script via S3 Trigger so that whenever a storage event happens on S3, the trigger should run the ETL job and finally store the Join data to another final S3 location as you can see.
