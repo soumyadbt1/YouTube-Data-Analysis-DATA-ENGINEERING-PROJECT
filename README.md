@@ -59,17 +59,29 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 9) On running the SQL, we get this error, which means catalog table din't understand how an array needs to be queried.
 ![error](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Not%20able%20to%20understand%20this%20JSON%20data.JPG)
 
-10) We need to have some ETL preprocessing to get the items we need from the JSON source data and then use Athena to query it for which we created a Lambda Function
+10) We need to have some ETL pre-processing to get the items we need from the JSON source data and then use Athena to query it for which we created a Lambda Function using python code.
+![lambda fn](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/lamda%20function.JPG)
 
-11) i) Tested Lamda Function code which created parquet file on another S3 location after procesing of data:
-   ![a](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/lamda%20function%20environment%20variables.JPG)
-   
-  ii) Deployed Lambda Function
-   ![b](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/deployed%20lamda%20function.JPG)
+11) Created Environment variables to test the Lambda Function
+![a](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/lamda%20function%20environment%20variables.JPG)
+
+12) Below is the code used to test, which is picking the item json element and then writing to s3 bucket as a transformation:
+    
+![code](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Lamda%20Function%20Code.JPG)
+
+Code : https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Code/lambda_function.py
+
+13) i) Tested Lamda Function code which created parquet file on another S3 location after procesing of data:
+    
    ![c](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Lamda%20Function%20Test%20Suceeded.JPG)
 
-7) Lambda Function Code :
-https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Code/lambda_function.py
+   ![d](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/function%20test%20created%20the%20parquet%20files.JPG)
+      
+  ii) Deployed Lambda Function :
+  
+   ![b](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/deployed%20lamda%20function.JPG)
+   
+
  
 8) Now we can use AWS Athena to Query the processed / cleaned data with cleaned data stats on Glue as well :
  ![d](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/athena%20query.JPG)
