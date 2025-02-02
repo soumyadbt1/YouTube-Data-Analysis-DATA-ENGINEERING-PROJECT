@@ -110,16 +110,20 @@ https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blo
 
 ![r](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/parquet%20files%20created%20by%20job%20run.JPG)
 
-11) Then, Created Automated ETL Script via S3 Trigger so that whenever a storage event happens on S3, the trigger should run the ETL job and finally store the Join data to another final S3 location as you can see.
+21) Then we created another crawler job to gather stats from the cleaner S3 bucket :
+    
+![crawler](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/crawler%20job%203.JPG)
+
+22) Then, Created Automated ETL Script via S3 Trigger so that whenever a storage event happens on S3, the trigger should run the ETL job and finally store the Join data to another final S3 location as you can see.
 ![f](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/added%20Trigger%20to%20Lambda%20Function.JPG)
 ![g](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/added%20Trigger%20to%20Lambda%20Function%202.JPG)
 ![i](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/ETL%20Job%20to%20Join%20and%20Save%20the%20data%20to%20S3.JPG)
 
-12) Final S3 location and files after the ETL job run :
+23) Final S3 location and files after the ETL job run :
 ![image](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/final%20s3%20reporting%20data.JPG)
 ![image](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Final_reporting_parquet_files.JPG)
 
-13) Finally used Amazon Quicksite to use the final data as source for some analytics and reporting:
+24) Finally used Amazon Quicksite to use the final data as source for some analytics and reporting:
   
    i) Quicksite Setup : 
     ![image](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/quicksite%20setup.JPG)
