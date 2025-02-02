@@ -88,8 +88,19 @@ Code : https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJ
 
  ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/cleansed%20table%20is%20formed.JPG)
 
+15) Ran crawler job for csv and partitioned by Region column table got created.
+    
+![r](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/ran%20crawler%20for%20csv.JPG)
 
-9) Manual ETL Script to perform transformation (Schema Change) on one of the fields and also to create partition Key on "Region" field:
+![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Table%20created%20by%20Crawler%20Job%202.JPG)
+
+16) Join of the 2 tables :
+    
+![join](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/join.JPG)
+
+
+17) Manual ETL Script to perform transformation (Schema Change) on one of the fields and also to create partition Key on "Region" field:
+    
 ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/de-on-youtube-cleansed-csv-to-parquet_1_ETL_script.JPG)
 
 10) ETL Code used : 
