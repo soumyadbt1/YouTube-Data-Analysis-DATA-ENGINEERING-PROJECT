@@ -81,7 +81,7 @@ Code : https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJ
   
    ![b](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/deployed%20lamda%20function.JPG)
    
- 
+
 14) Now we can use AWS Athena to Query the processed / cleaned data with cleaned data stats on Glue as well, we can see the lambda function code worked and created the right columns with data types :
    
  ![d](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/athena%20query.JPG)
@@ -102,8 +102,13 @@ Code : https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJ
     
 ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/de-on-youtube-cleansed-csv-to-parquet_1_ETL_script.JPG)
 
-18) ETL Code used : 
+18) ETL Code used :
+     
 https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Code/pyspark_code.py
+
+20) The job run created the region file parquet files in each region folder in cleaned S3 :
+
+![r](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/parquet%20files%20created%20by%20job%20run.JPG)
 
 11) Then, Created Automated ETL Script via S3 Trigger so that whenever a storage event happens on S3, the trigger should run the ETL job and finally store the Join data to another final S3 location as you can see.
 ![f](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/added%20Trigger%20to%20Lambda%20Function.JPG)
