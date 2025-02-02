@@ -43,13 +43,25 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 3) Folders & files created on S3 Bucket :
  ![s3](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/folders%20created%20in%20s3.JPG)
 
-4) Created Crawler Job & Ran it to gather stats:
+4) Created IAM role for AWS Glue to access S3 bucket :
+ ![s3](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/glue%20s3%20access%20role.JPG)
+
+5) Created Crawler Job & Ran it to gather stats:
  ![EC2 instance Creation](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/crawler%20running.JPG)
 
-5) Table created by crawler job on AWS Glue Service:
+7) Table created by crawler job on AWS Glue Service:
 ![Glue Database](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/tables%20added%20by%20crawler%20on%20catalog%20databse.JPG)
+![Glue Table](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Table%20created%20by%20Crawler%20Job%201.JPG)
 
-6) i) Tested Lamda Function code which created parquet file on another S3 location after procesing of data:
+8) Now its time to view the data in table, for which we used AWS Athena, but to run queries, we need a S3 bucket for output of query run, which is below:
+![S3](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/S3%20bucket%20to%20run%20athena%20query%20output.JPG)
+
+9) On running the SQL, we get this error, which means catalog table din't understand how an array needs to be queried.
+![error](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Not%20able%20to%20understand%20this%20JSON%20data.JPG)
+
+10) We need to have some ETL preprocessing to get the items we need from the JSON source data and then use Athena to query it for which we created a Lambda Function
+
+11) i) Tested Lamda Function code which created parquet file on another S3 location after procesing of data:
    ![a](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/lamda%20function%20environment%20variables.JPG)
    
   ii) Deployed Lambda Function
