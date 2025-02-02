@@ -71,7 +71,7 @@ Creating interactive dashboards with Amazon QuickSight to visualize trends and m
 
 Code : https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Code/lambda_function.py
 
-13) i) Tested Lamda Function code which created parquet file on another S3 location after procesing of data:
+13) i) Tested Lamda Function code which created parquet file on another S3 location after processing of data:
     
    ![c](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/Lamda%20Function%20Test%20Suceeded.JPG)
 
@@ -81,12 +81,13 @@ Code : https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJ
   
    ![b](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/deployed%20lamda%20function.JPG)
    
-
  
-8) Now we can use AWS Athena to Query the processed / cleaned data with cleaned data stats on Glue as well :
+14) Now we can use AWS Athena to Query the processed / cleaned data with cleaned data stats on Glue as well, we can see the lambda function code worked and created the right columns with data types :
+   
  ![d](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/athena%20query.JPG)
 
  ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/cleansed%20table%20is%20formed.JPG)
+
 
 9) Manual ETL Script to perform transformation (Schema Change) on one of the fields and also to create partition Key on "Region" field:
 ![e](https://github.com/soumyadbt1/YouTube-Data-Analysis-DATA-ENGINEERING-PROJECT/blob/main/Snapshots/de-on-youtube-cleansed-csv-to-parquet_1_ETL_script.JPG)
